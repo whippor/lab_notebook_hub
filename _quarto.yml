@@ -1,0 +1,17 @@
+
+project:
+  type: website
+
+website:
+  title: "Lab Notebook Hub"
+  navbar:
+    left:
+      - file: index.qmd
+      - file: references/project_links.md
+
+format:
+  html:
+    toc: true
+    toc-depth: 2
+    number-sections: true
+

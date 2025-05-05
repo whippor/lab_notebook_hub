@@ -1,0 +1,10 @@
+---
+title: "Lab Notebook Hub"
+format: html
+---
+
+# 🧪 Central Notebook Index
+
+This notebook links out to all project notebooks.
+
+See [Project Notebooks](references/project_links.md).
