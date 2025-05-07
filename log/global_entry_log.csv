@@ -1,8 +1,12 @@
-date,project,entry_title,entry_file
-2025-05-04,kbay_habitat_mapping,Initial Log,~Documents/git/kbay_habitat_mapping/lab-notebook//index.qmd
-2025-05-04,kbay_benthic_survey,Initial Log,~Documents/git/kbay_benthic_survey/lab-notebook//index.qmd
-2025-05-04,kbay_dropcam,Initial Log,~Documents/git/kbay_dropcam/lab-notebook//index.qmd
-2025-05-04,kbay_filterfeeders,Initial Log,~Documents/git/kbay_filterfeeders/lab-notebook//index.qmd
-2025-05-04,kbay_SAV-HSI_model,Initial Log,~Documents/git/kbay_SAV-HSI_model/lab-notebook//index.qmd
-2025-05-04,kbay_seagrass_monitoring,Initial Log,~Documents/git/kbay_seagrass_monitoring/lab-notebook//index.qmd
-2025-05-04,kbay_wrack,Initial Log,~Documents/git/kbay_wrack/lab-notebook//index.qmd
+date,project,entry,description
+2025-01-01,benthic survey,2025-01-01_entry,pre-test
+2025-05-06,benthic survey,2025-05-06_entry.qmd,Test Entry
+2025-01-01,dropcam,2025-01-01_entry,pre-test
+2025-05-06,dropcam,2025-05-06_entry.qmd,Test Entry
+2025-01-01,filter feeders,2025-01-01_entry,pre-test
+2025-05-06,filter feeders,2025-05-06_entry.qmd,Test Entry
+2025-01-01,habitat mapping,2025-01-01_entry,pre-test
+2025-05-06,habitat mapping,2025-05-06_entry.qmd,Test Entry
+2025-01-01,SAV-HSI model,2025-01-01_entry,pre-test
+2025-05-06,SAV-HSI model,2025-05-06_entry.qmd,Test Entry
+2025-05-06,segrass monitoring,2025-05-06_entry.qmd,Test Entry

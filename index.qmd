@@ -3,8 +3,48 @@ title: "Lab Notebook Hub"
 format: html
 ---
 
+```{r}
+#| echo = FALSE
+#| include = FALSE
+
+library(tidyverse)
+```
+
 # 🧪 Central Notebook Index
 
 This notebook links out to all project notebooks.
 
 See [Project Notebooks](references/project_links.md).
+
+### Global Entry Log
+
+```{r}
+#| echo = FALSE
+
+bc_log <- read_csv("../kbay_benthic_survey/lab_notebook/log/data_reference_log.csv")
+bc_log$project <- "benthic survey"
+dc_log <- read_csv("../kbay_dropcam/lab_notebook/log/data_reference_log.csv")
+dc_log$project <- "dropcam"
+ff_log <- read_csv("../kbay_filterfeeders/lab_notebook/log/data_reference_log.csv")
+ff_log$project <- "filter feeders"
+hm_log <- read_csv("../kbay_habitat_mapping/lab_notebook/log/data_reference_log.csv")
+hm_log$project <- "habitat mapping"
+sv_log <- read_csv("../kbay_SAV-HSI_model/lab_notebook/log/data_reference_log.csv")
+sv_log$project <- "SAV-HSI model"
+sg_log <- read_csv("../kbay_seagrass_monitoring/lab_notebook/log/data_reference_log.csv")
+sg_log$project <- "segrass monitoring"
+wr_log <- read_csv("../kbay_wrack/lab_notebook/log/data_reference_log.csv")
+wr_log$project <- "wrack"
+
+log <- bc_log %>%
+  bind_rows(dc_log,
+            ff_log,
+            hm_log,
+            sv_log,
+            sg_log) %>%
+  drop_na(entry) %>%
+  select(date, project, entry, description)
+write_csv(log, "log/global_entry_log.csv")
+
+log
+```
